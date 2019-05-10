@@ -1,0 +1,956 @@
+/*fonts*/
+@font-face {
+    font-family: 'Titillium Webm';
+    src: url('assets/fonts/TitilliumWeb/TitilliumWeb-Bold.eot');
+    src: local('Titillium Web Bold'), local('TitilliumWeb-Bold'),
+    url('assets/fonts/TitilliumWeb/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/TitilliumWeb/TitilliumWeb-Bold.woff') format('woff'),
+    url('assets/fonts/TitilliumWeb/TitilliumWeb-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('assets/fonts/TitilliumWeb/TitilliumWeb-Light.eot');
+    src: local('Titillium Web Light'), local('TitilliumWeb-Light'),
+    url('assets/fonts/TitilliumWeb/TitilliumWeb-Light.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/TitilliumWeb/TitilliumWeb-Light.woff') format('woff'),
+    url('assets/fonts/TitilliumWeb/TitilliumWeb-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Titillium Webr';
+    src: url('assets/fonts/TitilliumWeb/TitilliumWeb-Regular.eot');
+    src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'),
+    url('assets/fonts/TitilliumWeb/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/TitilliumWeb/TitilliumWeb-Regular.woff') format('woff'),
+    url('assets/fonts/TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('assets/fonts/MyriadPro/MyriadPro-Regular.eot');
+    src: url('assets/fonts/MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/MyriadPro/MyriadPro-Regular.woff') format('woff'),
+    url('assets/fonts/MyriadPro/MyriadPro-Regular.ttf')  format('truetype'),
+    url('assets/fonts/MyriadPro/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadPro-It';
+    src: url('assets/fonts/MyriadPro/MyriadPro-It.eot');
+    src: url('assets/fonts/MyriadPro/MyriadPro-It.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/MyriadPro/MyriadPro-It.woff') format('woff'),
+    url('assets/fonts/MyriadPro/MyriadPro-It.ttf')  format('truetype'),
+    url('assets/fonts/MyriadPro/MyriadPro-It.svg#MyriadPro-It') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Titillium Webb';
+    src: url('assets/fonts/TitilliumWeb/TitilliumWeb-Bold.eot');
+    src: local('assets/fonts/TitilliumWeb/Titillium Web Bold'), local('TitilliumWeb-Bold'),
+    url('assets/fonts/TitilliumWeb/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/TitilliumWeb/TitilliumWeb-Bold.woff') format('woff'),
+    url('assets/fonts/TitilliumWeb/TitilliumWeb-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MalagaOT-RegItalic';
+    src: url('assets/fonts/MalagaOT/MalagaOT-RegItalic.eot');
+    src: url('assets/fonts/MalagaOT/MalagaOT-RegItalic.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/MalagaOT/MalagaOT-RegItalic.svg#MalagaOT-RegItalic') format('svg'),
+    url('assets/fonts/MalagaOT/MalagaOT-RegItalic.ttf') format('truetype'),
+    url('assets/fonts/MalagaOT/MalagaOT-RegItalic.woff') format('woff'),
+    url('assets/fonts/MalagaOT/MalagaOT-RegItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/*general*/
+a {
+    text-decoration: none;
+    color: #858688;
+}
+.collection-item a:hover {
+    color: darkred;
+    text-shadow: darkred;
+    font-size: larger;
+}
+body {
+    margin: 0 auto;
+    width: 1800px;
+    height: 3141px;
+    background-color: #fff;
+}
+header {
+    height: 151px;
+    width: 100%;
+}
+section .create-acc {
+    height: 767px;
+}
+section .phys-security {
+    height: 464px;
+}
+section .any-device{
+    height: 831px;
+}
+section .privacy-is-fund {
+    height: 327px;
+}
+footer {
+    height: 603px;
+}
+main {
+}
+
+/*header*/
+.apple, .telegram {
+    background-image: url("assets/images/ellipse.png");
+    padding: 14px;
+    margin: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.log-item a {
+    text-decoration: none;
+    color: #5b4295;
+}
+.hidden-title {
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: 0;
+}
+.nav {
+    height: 150px;
+    /*width: 100%;*/
+    display: flex;
+    flex-direction: row;
+    margin: 0 200px;
+}
+.title {
+    font-family: "Titillium Webm", Serif;
+    /*font-size: 2em;*/
+    font-size: 30px;
+    color: rgba(133, 134, 136, 255);
+    margin: 0;
+}
+.main-title {
+    color: #5b4295;
+}
+ul {
+    list-style-type: none;
+    font-family: "Titillium Web", Serif;
+    color: rgba(149, 149, 149, 255);
+}
+.lang {
+    font-size: 0.9em;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 10px 0 0 0;
+    letter-spacing: -0.3px;
+}
+.lang-item-en {
+    font-family: "Titillium Webm", Serif;
+}
+.lang-item {
+    margin-right: 11px;
+}
+.collection-item {
+    margin-right: 26px;
+}
+.collection{
+    font-size: 1em;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    margin: 84px -5px 0 0;
+    letter-spacing: 0.2px;
+}
+.nav-collection {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.log {
+    display: flex;
+    flex-direction: row;
+    font-family: "Titillium Webm", Serif;
+    margin-top: 70px;
+    padding: 0;
+}
+.log-item {
+    color: #5b4295;
+    padding: 14px 21px;
+}
+.enter {
+    margin: 17px -11px 0 0;
+}
+.log-in {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+.source {
+    display: flex;
+    flex-direction: column;
+    width: 815px;
+    justify-content: flex-end;
+}
+.btn-sign {
+    font-family: "Titillium Webm", Serif;
+    font-size: 16px;
+    padding: 9px 22px;
+    background: rgb(82,35,122);
+    background: linear-gradient(122deg, rgba(82,35,122,1) 64%, rgba(220,172,233,1) 88%);
+    color: white;
+    border-radius: 27px;
+    margin: 7px 1px 0 0;
+    border: none;
+}
+.lang a:hover {
+    color: #fc444a;
+}
+.lang:hover {
+    color: dodgerblue;
+}
+/*main*/
+/*create acc*/
+.mount {
+    width: 100%;
+    position: relative;
+    top: -151px;
+}
+/*.white-space {*/
+/*position: absolute;*/
+/*width: 100%;*/
+/*}*/
+.create-acc {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 768px;
+    background-image: url("assets/images/mainImage.png");
+    background-position-y: -151px;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 1%;
+    margin: 88px 34px 0 0;
+}
+.logo-items {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 99%;
+    align-items: center;
+    margin: 145px -26px 64px 0;
+}
+.logo-item-1 {
+    margin: 0 0 -8px 29px;
+    font-size: 62px;
+    color: #858688;
+    font-family: "Titillium Webr", Serif;
+}
+.logo-item-2 {
+    margin: 0 0 0 25px;
+    font-size: 36px;
+    color: #858688;
+    font-family: "Titillium Webr", Serif;
+}
+.connections {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: -14px 0 0 15px
+}
+.telegram {
+    margin: 14px 14px 14px 0;
+}
+.somewhere {
+    color: #fc444a;
+}
+.cr-acc {
+    height: 56px;
+    width: 250px;
+    font-family: "Titillium Webm", Serif;
+    font-size: 18px;
+    background: rgb(220,172,233);
+    background: linear-gradient(90deg, rgba(220,172,233,1) 0%, rgba(82,35,122,1) 57%);
+    color: white;
+    border-radius: 27px;
+    border: none;
+    text-align: center;
+}
+.apple {
+    margin: 0 21px 0 25px;
+}
+
+/*phys-security*/
+/*part-1*/
+.phys-security {
+    display: flex;
+    flex-direction: column;
+    height: 495px;
+}
+.description {
+    display: flex;
+    flex-direction: row;
+    font-family: "Titillium Webr", Serif;
+    color: #858688;
+    margin: 0 239px 0 323px;
+    height: 283px;
+}
+.description-block {
+    display: flex;
+    flex-direction: column;
+    width: 464px;
+    margin: -40px 0px 0 0px;
+    padding: 0 35px 0 0;
+    height: 250px;
+}
+.head {
+    display: flex;
+    flex-direction: row;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.content-block-1 {
+    margin: 0 0 0 9px;
+}
+.content-block-2 {
+    margin: 0 0 0 -7px;
+}
+.content-block-3 {
+    margin: 0 0 0 5px
+}
+.content h3 {
+    margin-bottom: -32px;
+    font-size: 28px;
+    color: #6c6c6c;
+    letter-spacing: 1.2px;
+}
+.content h4 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+.p-content {
+    font-size: 14px;
+    margin-top: 2px;
+    letter-spacing: 0.1px;
+}
+.img-shield{
+    height: 66px;
+    margin: 28px -1px 0 -14px;
+}
+.img-lock {
+    height: 73px;
+    margin: 19px 0 0 -3px;
+}
+.img-key {
+    height: 60px;
+    margin: 30px 0 0 33px;
+}
+.text-3 {
+    margin: 2px 0 0 49px;
+}
+.text-2 {
+    padding: 0 0 0 24px;
+}
+/*part-2*/
+.security {
+    font-family: "Titillium Webr", sans-serif;
+}
+.phys-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 14px 0 0;
+    height: 146px;
+}
+.phys-content h2 {
+    font-size: 54px;
+    margin: -10px 3px -3px 0;
+    padding: 0;
+    letter-spacing: 3px;
+    color: #535353;
+}
+.phys-content p {
+    font-size: 25px;
+    font-family: "Titillium Webm", sans-serif;
+    margin: 0 206px -15px 0;
+    letter-spacing: -0.6px;
+    color: #6c6c6c;
+}
+.phys-content .text-2 {
+    margin: 0 122px -15px 0;
+    letter-spacing: -0.5px;
+}
+.learn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62px;
+    padding: 0px 0px 0px 480px;
+    letter-spacing: 0.3px;
+}
+.learn-more h4 {
+    margin: 1px -2px 0px 0;
+    padding: 18px 30px;
+    border: 1px solid #535353;
+    color: #6c6c6c;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 40px;
+}
+
+/*part-3*/
+.any-device {
+    height: 812px;
+    background-image: url("assets/images/mac.png"), url("assets/images/layer30.png");
+    background-repeat: no-repeat;
+    background-position-x: 952px;
+    background-position-y: 145px;
+}
+.any-device img {
+    margin: 38px 0 0 21px;
+}
+.device-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+    padding: 13px 0 0 303px;
+
+}
+.device-content ul {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 24px 10px 0;
+}
+.device-content ul li {
+    margin: 0 0 -34px 0;
+}
+.poem {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+}
+.poem p{
+    margin: -11px 0 16px 0;
+    font-family: MalagaOT-RegItalic, serif;
+}
+.author {
+    font-size: 18px;
+    letter-spacing: 0;
+}
+.links {
+    overflow: visible;
+    height: 391px;
+    width: 100%;
+    font-family: "Titillium Webr", Serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0px 0 0;
+}
+.store-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 24%;
+}
+.links h2 {
+    margin: 0 -84px 21px 0;
+    font-size: 34px;
+    letter-spacing: 1.1px;
+}
+.links p {
+    margin: 0 0 0 0;
+}
+.text {
+    margin: -24px 29px 0 0;
+    line-height: 23px;
+    letter-spacing: 0.15px;
+    padding: 12px 12px 16px 12px;
+}
+.str-2 {
+    padding: 0 0 0 9px;
+}
+.str-3 {
+    padding: 0 0 0 221px;
+}
+#appstore-pic {
+    margin: -7px 13px 0 0;
+}
+#googleplay-pic {
+    margin: -7px -41px 0 0;
+}
+/*part-4*/
+.privacy-is-fund {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+.fund-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Titillium Webr", sans-serif;
+    color: #535353;
+    margin: 49px 0 0 0;
+}
+.fund-title h2 {
+    font-size: 37px;
+    letter-spacing: -0.2px;
+    margin: 0 0 0 0;
+}
+.fund-title h3 {
+    color: #858688;
+    font-size: 30px;
+    margin: -11px 0 0 0;
+    letter-spacing: -0.2px;
+}
+.donations {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.donations button {
+    border: none;
+    border-radius: 27px;
+    color: white;
+    font-family: MyriadPro, sans-serif;
+    font-size: 17px;
+    margin: 33px 24px 0 26px;
+}
+.upgrade {
+    width: 246px;
+    height: 56px;
+    background: rgb(220,172,233);
+    background: linear-gradient(90deg, rgba(220,172,233,1) 0%, rgba(82,35,122,1) 57%);
+}
+.donate {
+    width: 166px;
+    height: 56px;
+    background: rgb(186,197,255);
+    background: linear-gradient(90deg, rgba(186,197,255,1) 0%, rgba(70,122,252,1) 100%);;
+}
+
+/*footer*/
+footer h4 {
+    font-size: 14px;
+    font-family: "Titillium Webr", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 28px 0px 0 720px;
+    letter-spacing: 0.1px;
+    color: #858688;
+}
+footer img {
+    margin: -2px 465px;
+
+}
+.top-content {
+    font-family: "Titillium Webr", sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    margin: -7px 0 0 415px;
+}
+.list h3 {
+    font-family: "Titillium Webb", sans-serif;
+    color: #535353;
+}
+.container {
+    margin: 140px 0 0 0;
+}
+.contacts ul {
+    font-size: 14px;
+    margin: 12px 0 0 179px;
+    line-height: 23px;
+}
+.contacts b {
+    font-family: "Titillium Webb", sans-serif;
+}
+.support-way {
+    margin: 22px 0 0 0;
+}
+.list-1 {
+    margin: 0 0 0 -18px;
+}.list-2 {
+     margin: 0 0 0 81px;
+ }
+.list-3{
+    margin: 0 0 0 60px;
+}
+.footer-nav h3 {
+    text-align: right;
+}
+.footer-nav ul {
+    text-align: right;
+}
+.list ul {
+    font-size: 14px;
+}
+.bottom-content {
+    font-family: "Titillium Webr", sans-serif;
+    margin: 55px 0 0 200px;
+}
+.social-links {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    letter-spacing: -0.2px;
+    line-height: 0;
+}
+.social-links li {
+    padding: 0 14px 0 0;
+    font-size: 12px;
+}
+.copyright {
+    font-size: 12px;
+}
+.companies {
+    display: flex;
+    flex-direction: row;
+}
+.proto-list {
+    line-height: 24px;
+}
+
+/*lines*/
+.contacts::before,
+footer::before,
+footer::after,
+.security::after,
+.security::before,
+header::after,
+.phys-security::before,
+.any-device::after,
+.bottom-content::before,
+.create-acc::after{
+    content: "";
+    background-color: #858688;
+    display: block;
+    position: relative;
+}
+.create-acc::after {
+    left: 620px;
+    height: 1px;
+    width: 189px;
+    transform: rotate(90deg);
+    top: 313px;
+}
+.contacts::before {
+    left: 135px;
+    height: 1px;
+    width: 131px;
+    transform: rotate(90deg);
+    top: 86px;
+}
+footer::before {
+    left: 0;
+    height: 1px;
+    width: 1400px;
+    transform: rotate(0deg);
+    top: 12px;
+}
+footer::after {
+    left: 1179px;
+    height: 1px;
+    width: 441px;
+    transform: rotate(90deg);
+    top: -360px;
+}
+.security::after {
+    left: 0;
+    height: 1px;
+    width: 975px;
+    transform: rotate(0deg);
+    top: -30px;
+}
+.security::before {
+    left: 930px;
+    height: 1px;
+    width: 433px;
+    transform: rotate(90deg);
+    top: -70px;
+}
+header::after {
+    left: 200px;
+    height: 1px;
+    width: 46px;
+    transform: rotate(0deg);
+}
+.phys-security::before {
+    left: 1610px;
+    height: 1px;
+    width: 191px;
+    transform: rotate(0deg);
+    top: -2px;
+}
+.any-device::after {
+    left: 400px;
+    height: 1px;
+    width: 1400px;
+    transform: rotate(0deg);
+    top: 61px;
+}
+.bottom-content::before {
+    left: 590px;
+    height: 1px;
+    width: 313px;
+    transform: rotate(90deg);
+    top: -59px;
+}
+
+/*other resolutions*/
+@media screen and (max-width: 768px) {
+    /*general*/
+    body {
+        width: 768px;
+    }
+    /*header*/
+    .nav {
+        margin: 0 20px;
+    }
+    .collection {
+        letter-spacing: -1px;
+    }
+    .nav-collection {
+        margin: 0 30px 0 0;
+    }
+    .collection-item {
+        margin-right: 11px;
+    }
+    .logo-item-1 {
+        margin: 0 0 -8px 32px;
+        text-align: center;
+    }
+    /*main*/
+    .description {
+        margin: 0;
+        padding: 0 2px;
+    }
+    .content h3 {
+        font-size: 17px;
+    }
+    .content h4 {
+        font-size: 16px;
+    }
+    .description-block {
+        padding: 0 17px 0 0;
+        margin: 0 0 0 0;
+    }
+    .p-content {
+        font-size: 12px;
+    }
+    .head img {
+        height: 45px;
+    }
+    .content-block-1 {
+        margin: 13px 0 0 0;
+    }
+    .content-block-2 {
+        margin: 7px 0 0 -7px;
+    }
+    .content-block-3 {
+        margin: 4px 0 0 5px;
+    }
+    .img-key {
+        height: 60px;
+        margin: 15px 0 0 33px;
+    }
+    .phys-content p {
+        margin: 0 0 -15px 0;
+    }
+    .learn-more {
+        padding: 0 0 0 385px;
+    }
+    .forbs {
+        width: 737px;
+    }
+    .device-content {
+        padding: 0;
+    }
+    /*footer*/
+    .those {
+        margin: 28px 0 0 477px;
+    }
+    footer img {
+        margin: 0;
+    }
+    .contacts ul {
+        margin: 12px 0 0 0;
+    }
+    .list ul {
+        padding: 0;
+    }
+    .footer-nav {
+        margin: -7px 0 0 95px;
+    }
+    .list-3, .list-2 {
+        margin: 0 0 0 30px;
+    }
+    .bottom-content {
+        margin: 55px 0 0 41px;
+    }
+    header::after,
+    footer::before,
+    footer::after,
+    .create-acc::after,
+    .security::before,
+    .security::after,
+    .contacts::before,
+    .any-device::after {
+        display: none;
+    }
+}
+@media screen and (max-width: 420px) {
+    body {
+        width: 420px;
+    }
+    .nav {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .collection {
+        margin: 84px -204px 0 0;
+    }
+    .source {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 420px;
+        text-align: center;
+    }
+    .lang {
+        margin: 10px 0 0 83px;
+    }
+    .log-in {
+        margin: -73px 0 0 205px;
+    }
+    main {
+        margin: 40px 0 0 0;
+    }
+    .nav-collection {
+        margin: -81px 30px 0 0;
+    }
+    .logo-item-1 {
+        font-size: 25px;
+    }
+    .logo-item-2 {
+        font-size: 23px;
+    }
+    .phys-security{
+        flex-direction: column;
+    }
+    .description {
+        flex-direction: column;
+        height: 100%;
+    }
+    .text-2, .text-3 {
+        margin: 0;
+        padding: 0;
+    }
+    .head img {
+        margin-left: 0;
+    }
+    .p-content {
+        padding: 0px 69px 0 0;
+    }
+    .phys-security {
+        height: 1000px;
+    }
+    .security {
+        text-align: center;
+        height: 100%;
+    }
+    .learn-more {
+        padding: 0;
+        margin-top: 181px;
+    }
+    .phys-content .text-2 {
+        margin: 0;
+    }
+    .any-device {
+        height: 100%;
+        margin-top: 181px;
+    }
+    .device-content ul {
+        padding: 0;
+    }
+    .poem {
+        font-size: 17px;
+    }
+    .links h2 {
+         margin: 0;
+    }
+    .text {
+         margin: 0;
+    }
+    .str-2, .str-3, .str-1 {
+        padding: 0;
+        font-size: 13px;
+    }
+    .privacy-is-fund {
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-nav {
+         margin: 0;
+    }
+    .bottom-content {
+        margin: 55px 0 0 16px;
+    }
+    .forbs {
+        display: none;
+    }
+    footer h4 {
+        margin: 58px 0 -70px 0;
+    }
+    #googleplay-pic {
+        margin: -7px -5px 0 0;
+    }
+}
